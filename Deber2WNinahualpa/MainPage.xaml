@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Deber2WNinahualpa.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#2196F3" >
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition  Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="Usuario:" FontSize="10" ></Label>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="lblUser" FontSize="10" TextColor="White"></Label>
+                    <Label  Grid.Row="1" Grid.Column="0"  Text="Notas" HorizontalTextAlignment="Center" TextColor="White" FontSize="25" Grid.ColumnSpan="2"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition  Width="auto" />
+            </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" 
+               Text="Nota seguimiento 1"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNotaSeguimiento1" Placeholder="Ingrese nota de seguimiento 1" Keyboard="Numeric" ></Entry>
+
+       
+        <Label Grid.Row="1" Grid.Column="0"
+               Text="Examen 1"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtExamen1" Placeholder="Ingrese nota de examen 1" Keyboard="Numeric"></Entry>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Nota parcial 1"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="2" Grid.Column="1" x:Name="txtNotaParcial1" IsReadOnly="True"></Entry>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Nota seguimiento 2"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="3" Grid.Column="1" x:Name="txtNotaSeguimiento2" Placeholder="Ingrese nota de seguimiento 2" Keyboard="Numeric"></Entry>
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Examen 2"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="4" Grid.Column="1" x:Name="txtExamen2" Placeholder="Ingrese nota de examen 2" Keyboard="Numeric"></Entry>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Nota parcial 2"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="5" Grid.Column="1" x:Name="txtNotaParcial2" IsReadOnly="True"></Entry>
+
+            <Label Grid.Row="6" Grid.Column="0" Text="Nota Final"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="6" Grid.Column="1" x:Name="txtNotaFinal" IsReadOnly="True"></Entry>
+
+            <Label Grid.Row="7" Grid.Column="0" Text="Estado"                              
+               HorizontalOptions="Center"
+             />
+
+            <Entry Grid.Row="7" Grid.Column="1" x:Name="txtEstado" IsReadOnly="True"></Entry>
+
+            <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnCalcular" Clicked="btnCalcular_Clicked" Text="Calcular notas"></Button>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
